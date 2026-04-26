@@ -6,7 +6,6 @@ public class Main {
     static String save_text = "";
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        
         String echo = ("echo");
 
         boolean working = true;
@@ -16,9 +15,6 @@ public class Main {
             String text = scanner.nextLine();
             int index = text.indexOf(echo);
 
-            if (index != -1){
-                System.out.println(text);
-            }
             switch (text) {
                 case "calculator":
                     test_class.calculator();
@@ -37,11 +33,16 @@ public class Main {
                         if (text.equals("time") || text.equals("date")){
                             if (text.equals("time")){
                                 classes.time();
-                            }else {
+                            }
+                            if (text.equals("date")){
                                 classes.date();
                             }
                         }else {
-                            commands.commands_main(text);
+                            if (index != -1){
+                                System.out.println(text);
+                            }else {
+                                commands.commands_main(text);
+                            }
                         }
             }
         }
