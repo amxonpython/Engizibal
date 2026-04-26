@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/27106757/README.md)
 # Engizibal
 
 Консольное приложение на Java с набором утилит для повседневного использования.  
