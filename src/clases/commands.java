@@ -7,6 +7,9 @@ public class commands {
                 data.name(text);
                 System.out.println("ваше имя: " + data.name);
                 break;
+            case "ping":
+                System.out.println("pong");
+                break;
             default:
                 Errors.not_command();
                 break;
