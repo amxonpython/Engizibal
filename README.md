@@ -36,10 +36,7 @@
 
 ## Запуск
 
-```bash
-javac -d . Main.java clases/*.java
-java Main
-```
+для запуска просто запустите файл **Main.java** в любом компиляторе кода
 
 ---
 
