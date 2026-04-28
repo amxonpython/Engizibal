@@ -6,8 +6,6 @@ public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-
-
         boolean working = true;
         System.out.println("Engizibal v0.1.4");
         while (working){
