@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         boolean working = true;
-        System.out.println("Engizibal v0.1.4");
+        System.out.println("Engizibal v0.1.5");
         while (working){
             System.out.println("выберите команду: ");
             String text = scanner.nextLine();
