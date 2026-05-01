@@ -49,4 +49,41 @@ public class test_class {
             Errors.not_command();
         }
     }
+
+    static String save_text = "";
+
+    public static void save_text(){
+
+        Scanner scanner = new Scanner(System.in);
+        boolean working = true;
+        while (working){
+            System.out.println("Выберите действие (save, remove, watch, exit): ");
+            String text = scanner.nextLine();
+
+            if (text.equals("save") || text.equals("remove") || text.equals("watch") || text.equals("exit")){
+                if (text.equals("save")){
+                    System.out.println("введите текст который хотите сохранить");
+                    save_text = scanner.nextLine();
+                    System.out.println("текст сохранён");
+                }
+                if (text.equals("remove")){
+                    save_text = ("");
+                    System.out.println("удалено");
+                }
+                if (text.equals("watch")){
+                    if(save_text.isEmpty()){
+                        System.out.println("пусто");
+                    }else {
+                        System.out.println(save_text);
+                    }
+                }
+                if (text.equals("exit")){
+                    System.out.println("выход из редактора");
+                    working = false;
+                }
+            }else {
+                Errors.not_command();
+            }
+        }
+    }
 }
